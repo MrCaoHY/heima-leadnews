@@ -1,0 +1,18 @@
+server:
+  port: 51802
+spring:
+  application:
+    name: leadnews-article
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 150.158.214.34:8848
+      config:
+        server-addr: 150.158.214.34:8848
+        file-extension: yml
+minio:
+  accessKey: minio
+  secretKey: minio123
+  bucket: leadnews
+  endpoint: http://150.158.214.34:9001
+  readPath: http://150.158.214.34:9001
